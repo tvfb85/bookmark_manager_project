@@ -1,1 +1,0 @@
-require 'student_database'
