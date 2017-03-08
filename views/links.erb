@@ -1,0 +1,12 @@
+<%= erb :new %>
+
+<hr>
+
+<ol>
+  <% @links.each do |link| %>
+    <li>
+      <%=link[:title]%><br>
+      <%=link[:url]%>
+    </li>
+  <%end%>
+</ol>
