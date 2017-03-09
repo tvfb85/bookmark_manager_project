@@ -1,8 +1,8 @@
-require 'sinatra/base'
-require './app/helpers/dm_config'
-require './lib/bookmark_manager'
-
 ENV['RACK_ENV'] ||= 'development'
+
+require 'sinatra/base'
+require './lib/bookmark_manager'
+require './app/helpers/dm_config'
 
 class App < Sinatra::Base
 

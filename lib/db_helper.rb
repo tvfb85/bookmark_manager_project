@@ -15,7 +15,7 @@ module DBHelper
   end
 
   def insert_into_db(params)
-    Link.create(params)
+    LinkTag.create(:link => Link.create(:title => params[:title], :url => params[:url]), :tag => Tag.first_or_create(:name => params[:tags]))
   end
 
 end

@@ -3,7 +3,7 @@ require 'bookmark_manager'
 describe BookmarkManager do
 
   before(:each) do
-    Link.create(title: "Example Page", url: "http://example.com")
+    LinkTag.create(:link => Link.create(title: "Example Page", url: "http://example.com"), tag: Tag.first_or_create(:name => "misc"))
   end
 
   describe '#get_all_links' do
