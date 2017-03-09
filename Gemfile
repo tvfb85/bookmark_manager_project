@@ -9,7 +9,9 @@ gem 'bcrypt'
 gem 'rack'
 gem 'database_cleaner'
 
-group :test do
-  gem 'capybara'
-  gem 'sinatra'
-end
+gem 'capybara'
+gem 'sinatra'
+#
+# group :test do
+#
+# end
